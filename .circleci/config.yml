@@ -9,10 +9,10 @@ jobs:
             - image: cimg/node:16.8.0
         steps:
             - checkout
-            - run: npm install
-            - run: npm run test
+            - run: npm install # directs the test case to install npm
+            - run: npm run test # directs the test case to run the test cases
 
-workflows:
-    app-tests:
-        jobs:
-            - test
+workflows: 
+    app-tests: # names the this specifc workflow
+        jobs: # lists the order of jobs to be completed
+            - test # names which specific test to be done
