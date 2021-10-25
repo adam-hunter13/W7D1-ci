@@ -16,3 +16,4 @@ workflows:
     app-tests: # names the this specifc workflow
         jobs: # lists the order of jobs to be completed
             - test # names which specific test to be done
+            - it # run the second test I put in
