@@ -1,10 +1,13 @@
-function getGreeting(name){
+module.exports = {
+
+getGreeting: function getGreeting(name){
     return "Hi " + name;
+},
+
+getColor: function getColor(color){
+    return `My favorite color is ${color}`;
 }
 
-// function getColor(color){
-//     return `My favorite color is ${color}`;
-// }
 
-module.exports = getGreeting;
-// module.exports = getColor;
+
+}
